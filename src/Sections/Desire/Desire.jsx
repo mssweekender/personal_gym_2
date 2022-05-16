@@ -144,7 +144,7 @@ export default Desire;
 const DesireContainer = styled.div`
   width: 100%;
 
-  padding-top: 60px;
+  padding-top: 120px;
 `;
 
 const MainContainer = styled.div`

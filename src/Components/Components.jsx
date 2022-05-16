@@ -9,7 +9,7 @@ export const Size = styled.div`
 `;
 
 export const Size2 = styled.div`
-  width: 341px;
+  width: 350px;
 
   margin: 0 auto;
 `;
