@@ -1,8 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 
+//import images
+
+import BG from "../../Images/customer-bg.svg";
+
 const Customer = () => {
-  return <CustomerContainer>Customer</CustomerContainer>;
+  return <CustomerContainer></CustomerContainer>;
 };
 
 export default Customer;
@@ -10,5 +14,6 @@ export default Customer;
 const CustomerContainer = styled.div`
   width: 100%;
   height: 1259px;
-  background-color: lightgoldenrodyellow;
+  background-image: url(${BG});
+  background-position: center;
 `;
