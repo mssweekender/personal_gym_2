@@ -24,6 +24,8 @@ const Strength = () => {
         <FeatureContainer>
           <CardSection>
             <Card />
+            <Card />
+            <Card />
           </CardSection>
         </FeatureContainer>
       </Size2>
@@ -43,4 +45,12 @@ const FeatureContainer = styled.div`
   margin: 50px auto;
 `;
 
-const CardSection = styled.div``;
+const CardSection = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+`;
