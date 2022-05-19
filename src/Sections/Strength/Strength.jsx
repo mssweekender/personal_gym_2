@@ -14,29 +14,38 @@ import {
   Size2,
   MainTitle,
   TitleFlex,
+  Button,
 } from "../../Components/Components";
 
 const Strength = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <StrengthContainer>
-      <Size2>
-        <SectionTitle>
-          <TitleFlex>
-            <SubTitle>選ばれる３つの理由</SubTitle>
-            <MainTitle>なんでも頼れる”万能性”</MainTitle>
-          </TitleFlex>
-        </SectionTitle>
-        <FeatureContainer>
-          <AnimateSharedLayout>
-            <CardSection>
+    <AnimateSharedLayout>
+      <StrengthContainer layout="position">
+        <Size2 layout>
+          <SectionTitle>
+            <TitleFlex>
+              <SubTitle color="#f03434">選ばれる３つの理由</SubTitle>
+              <MainTitle>なんでも頼れる”万能性”</MainTitle>
+            </TitleFlex>
+          </SectionTitle>
+          <FeatureContainer layout>
+            <CardSection
+              layout
+              transition={{ duration: 0.8, ease: [0.04, 0.62, 0.23, 0.98] }}
+            >
               {Data.map((Data) => (
                 <CardElement
                   layout
                   transition={{
-                    duration: 1,
+                    duration: 0.8,
+                    ease: [0.04, 0.62, 0.23, 0.98],
                     type: "spring",
                   }}
+                  // transition={{
+                  //   duration: 0.5,
+                  //   type: "spring",
+                  // }}
                   onClick={() => setIsOpen(!isOpen)}
                   style={{
                     borderRadius: "20px",
@@ -93,26 +102,28 @@ const Strength = () => {
                 </CardElement>
               ))}
             </CardSection>
-          </AnimateSharedLayout>
-        </FeatureContainer>
-      </Size2>
-    </StrengthContainer>
+          </FeatureContainer>
+        </Size2>
+        <Button />
+      </StrengthContainer>
+    </AnimateSharedLayout>
   );
 };
 
 export default Strength;
 
-const StrengthContainer = styled.div`
+const StrengthContainer = styled(motion.div)`
   padding-top: 120px;
+  padding-bottom: 60px;
   width: 100%;
   height: 100%;
 `;
 
-const FeatureContainer = styled.div`
+const FeatureContainer = styled(motion.div)`
   margin: 50px auto;
 `;
 
-const CardSection = styled.div`
+const CardSection = styled(motion.div)`
   display: flex;
   flex-direction: column;
   gap: 20px;

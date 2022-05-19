@@ -11,8 +11,8 @@ const Hero = () => {
   return (
     <HeroSection>
       <HeroTitle>
-        <p>ボディメイク</p>
-        <p>ボディケア</p>
+        <p>トレーニング</p>
+        <p>スポーツ整体</p>
         <p>健康管理</p>
       </HeroTitle>
       <HeroMain>
@@ -21,7 +21,7 @@ const Hero = () => {
       </HeroMain>
       <BottomContainer>
         <div className="bottom_left">
-          <div className="content">
+          {/* <div className="content">
             <p className="content_first ">入会金</p>
             <p className="strong">
               0<span>円</span>
@@ -30,14 +30,25 @@ const Hero = () => {
           <div className="content">
             <p className="content_first">大会出場者</p>
             <p className="content_second">多数</p>
-          </div>
+          </div> */}
         </div>
         <div className="bottom_right">
           <img src={Man} alt="" className="man" />
           <img src={Lady} alt="" className="girl" />
         </div>
       </BottomContainer>
-      <Gradient></Gradient>
+      <Gradient>
+        <div className="minutes">
+          <p>
+            30<span>分</span>
+          </p>
+        </div>
+        <div className="price">
+          <p>
+            4300<span>円 ~</span>
+          </p>
+        </div>
+      </Gradient>
     </HeroSection>
   );
 };
@@ -150,5 +161,62 @@ const BottomContainer = styled.div`
 const Gradient = styled.div`
   width: 100%;
   height: 200px;
-  background-image: var(--gradient_opacity);
+  /* background-image: var(--gradient_opacity); */
+  .minutes {
+    position: relative;
+    top: 20px;
+    left: 50px;
+    p {
+      font-family: Futura, Trebuchet MS, Arial, sans-serif;
+      position: relative;
+      z-index: 99;
+      font-size: 30px;
+      font-weight: bolder;
+      font-style: italic;
+      -webkit-text-stroke: 1px white;
+      -moz-text-shadow: 7px 3px 8px rgba(0, 0, 0, 0.52);
+      -webkit-text-shadow: 7px 3px 8px rgba(0, 0, 0, 0.52);
+      -ms-text-shadow: 7px 3px 8px rgba(0, 0, 0, 0.52);
+      text-shadow: 7px 3px 8px rgba(0, 0, 0, 0.52);
+      /* background: linear-gradient(to right, #d60f0f 0%, #e56e00 100%);
+      background-clip: text;
+      -webkit-background-clip: text; */
+      /* -webkit-text-fill-color: transparent; */
+      span {
+        -webkit-text-stroke: 1px white;
+        font-size: 20px;
+        font-family: var(--noto);
+      }
+    }
+  }
+  .price {
+    width: max-content;
+    position: relative;
+    top: 20px;
+    left: 30px;
+    /* font-family: var(--poppins); */
+    p {
+      margin-left: 20px;
+      font-family: Futura, Trebuchet MS, Arial, sans-serif;
+      position: relative;
+      z-index: 99;
+      font-size: 80px;
+      font-weight: bolder;
+      font-style: italic;
+      -webkit-text-stroke: 1px white;
+      -moz-text-shadow: 7px 3px 8px rgba(0, 0, 0, 0.52);
+      -webkit-text-shadow: 7px 3px 8px rgba(0, 0, 0, 0.52);
+      -ms-text-shadow: 7px 3px 8px rgba(0, 0, 0, 0.52);
+      text-shadow: 7px 3px 8px rgba(0, 0, 0, 0.52);
+      /* background: linear-gradient(to right, #d60f0f 0%, #e56e00 100%);
+      background-clip: text;
+      -webkit-background-clip: text; */
+      /* -webkit-text-fill-color: transparent; */
+      span {
+        -webkit-text-stroke: 1px white;
+        font-size: 20px;
+        font-family: var(--noto);
+      }
+    }
+  }
 `;

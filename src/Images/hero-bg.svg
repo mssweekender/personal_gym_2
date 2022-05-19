@@ -1,4 +1,4 @@
-<svg width="390" height="1113" viewBox="0 0 390 1113" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="390" height="1114" viewBox="0 0 390 1114" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <path d="M0 0H390V844H0V0Z" fill="#C4C4C4" fill-opacity="0.83"/>
 <path d="M0 0H390V844H0V0Z" fill="url(#pattern0)"/>
 <circle cx="-1.87366" cy="3.78948" r="5.45263" fill="white"/>
@@ -265,7 +265,7 @@
 <circle cx="340.397" cy="605.274" r="5.27376" transform="rotate(-90 340.397 605.274)" fill="white"/>
 <circle cx="358.855" cy="605.274" r="5.27376" transform="rotate(-90 358.855 605.274)" fill="white"/>
 <circle cx="377.314" cy="605.274" r="5.27376" transform="rotate(-90 377.314 605.274)" fill="white"/>
-<path d="M-165.221 843.558L-165.221 294L372.936 843.558L-165.221 843.558Z" fill="#1B1B1B" fill-opacity="0.66"/>
+<path d="M-165.221 844.558L-165.221 295L372.936 844.558L-165.221 844.558Z" fill="#1B1B1B" fill-opacity="0.66"/>
 <defs>
 <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
 <use xlink:href="#image0_281_10" transform="translate(-0.944072) scale(0.00100283 0.000463392)"/>

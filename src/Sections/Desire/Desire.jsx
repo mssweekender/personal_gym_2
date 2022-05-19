@@ -17,7 +17,7 @@ const Desire = () => {
       <Size2>
         <SectionTitle>
           <TitleFlex>
-            <SubTitle>以下に当てはまる方は</SubTitle>
+            <SubTitle color="#f03434">以下に当てはまる方は</SubTitle>
             <MainTitle>ぜひご相談ください</MainTitle>
           </TitleFlex>
         </SectionTitle>

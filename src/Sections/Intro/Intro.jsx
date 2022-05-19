@@ -6,6 +6,7 @@ import { Size } from "../../Components/Components";
 
 import IntroBg from "../../Images/intro_bg.svg";
 import Line from "../../Images/intro_line.svg";
+import PF from "../../Images/seijusan.png";
 
 const Intro = () => {
   return (
@@ -42,7 +43,7 @@ const Intro = () => {
             <p className="name">中村 青樹</p>
           </div>
           <div className="image">
-            <img src="" alt="" className="trainer" />
+            <img src={PF} alt="" className="trainer" />
           </div>
           <div className="side_text">
             <p className="text">Personal Trainer</p>
@@ -125,6 +126,7 @@ const IntroSection = styled.div`
   }
   .image_container {
     position: relative;
+    right: 15px;
     .name_vertical {
       position: absolute;
       top: 51px;
@@ -144,6 +146,10 @@ const IntroSection = styled.div`
       background-color: white;
       margin: 60px auto;
       .trainer {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
       }
     }
     .side_text {

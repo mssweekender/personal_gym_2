@@ -7,6 +7,7 @@ const GlobalStyle = createGlobalStyle`
       --enji: #B3424A;
       /* fonts */
       --poppins: 'Poppins', sans-serif;
+      --noto: 'Noto Sans JP', sans-serif;
   }
 
   * {
