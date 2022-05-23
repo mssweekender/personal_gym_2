@@ -20,32 +20,34 @@ import {
 const Strength = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <AnimateSharedLayout>
-      <StrengthContainer layout="position">
-        <Size2 layout>
-          <SectionTitle>
-            <TitleFlex>
-              <SubTitle color="#f03434">選ばれる３つの理由</SubTitle>
-              <MainTitle>なんでも頼れる”万能性”</MainTitle>
-            </TitleFlex>
-          </SectionTitle>
-          <FeatureContainer layout>
+    <StrengthContainer
+      transition={{ duration: 1.2, ease: [0.04, 0.62, 0.23, 0.98] }}
+    >
+      <Size2>
+        <SectionTitle>
+          <TitleFlex>
+            <SubTitle color="#f03434">選ばれる３つの理由</SubTitle>
+            <MainTitle>なんでも頼れる”万能性”</MainTitle>
+          </TitleFlex>
+        </SectionTitle>
+        <FeatureContainer
+          transition={{ duration: 1.2, ease: [0.04, 0.62, 0.23, 0.98] }}
+        >
+          <AnimateSharedLayout>
             <CardSection
               layout
-              transition={{ duration: 0.8, ease: [0.04, 0.62, 0.23, 0.98] }}
+              transition={{ duration: 1.2, ease: [0.04, 0.62, 0.23, 0.98] }}
             >
-              {Data.map((Data) => (
+              {Data.map((Data, index) => (
                 <CardElement
+                  key={index}
                   layout
                   transition={{
                     duration: 0.8,
                     ease: [0.04, 0.62, 0.23, 0.98],
-                    type: "spring",
+                    // type: "spring",
                   }}
-                  // transition={{
-                  //   duration: 0.5,
-                  //   type: "spring",
-                  // }}
+                  exit={{ duration: 2, ease: [0.04, 0.62, 0.23, 0.98] }}
                   onClick={() => setIsOpen(!isOpen)}
                   style={{
                     borderRadius: "20px",
@@ -102,11 +104,11 @@ const Strength = () => {
                 </CardElement>
               ))}
             </CardSection>
-          </FeatureContainer>
-        </Size2>
-        <Button />
-      </StrengthContainer>
-    </AnimateSharedLayout>
+          </AnimateSharedLayout>
+        </FeatureContainer>
+      </Size2>
+      <Button />
+    </StrengthContainer>
   );
 };
 
@@ -121,6 +123,7 @@ const StrengthContainer = styled(motion.div)`
 
 const FeatureContainer = styled(motion.div)`
   margin: 50px auto;
+  height: 100%;
 `;
 
 const CardSection = styled(motion.div)`

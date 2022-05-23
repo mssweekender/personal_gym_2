@@ -28,11 +28,11 @@ const Contact = () => {
             </p>
             <p className="title_num">
               02
-              <span className="num">５つのアンケートへ回答</span>
+              <span className="num">簡単なアンケートへ回答</span>
             </p>
             <p className="text">
               LINEを追加してすぐに表示される
-              メッセージをよく読んでからアンケート
+              メッセージをよく読んでから、3つほどのアンケート
               へのご回答をお願いいたします。
             </p>
             <p className="title_num">

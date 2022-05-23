@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 
-import Profile from "../Images/customer-img.png";
+import Profile from "../Images/customer-1.svg";
+import Profile2 from "../Images/customer-2.svg";
 import { ImArrowUpRight } from "react-icons/im";
 
 const voices = [
@@ -33,9 +34,51 @@ const Customers = () => {
   return (
     <div>
       <VoiceSection>
+        <Container>
+          <CustomerProfile>
+            <ContentImage src={Profile2} />
+          </CustomerProfile>
+          <Content>
+            <div className="above_section">
+              <p className="detail">60代・女性</p>
+              <p className="name">
+                なな<span>さん（仮）</span>
+              </p>
+            </div>
+            <div className="main_text">
+              <p className="main">大会で好成績を残せた！</p>
+            </div>
+            <div className="result_section">
+              <div className="result">
+                <div className="result_content">
+                  <p className="succeed">実績</p>
+                  <ul className="list">
+                    <li className="item">
+                      某フィットネスクラブ 2019近畿大会優勝
+                    </li>
+                    <li className="item">
+                      某フィットネスクラブ 2019ファイナルグランプリ3位
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div className="below_section">
+              <p className="text">
+                フォームや姿勢など的確に教えて頂き分かりやすくて、楽しいです。
+              </p>
+              <p className="text">
+                受けている人を、飽きさせないコミニケーションも、素晴らしいですね。
+                トレーニングの際にどこの筋肉を使っているのかを、分かりやすく教えて頂いて、意識しながらのトレーニングは最高です。
+              </p>
+            </div>
+          </Content>
+        </Container>
         {voices.map((voice) => (
           <Container>
-            <ContentImage src={voice.image} />
+            <CustomerProfile>
+              <ContentImage src={voice.image} />
+            </CustomerProfile>
             <Content>
               <div className="above_section">
                 <p className="detail">{voice.detail}</p>
@@ -76,7 +119,9 @@ const Customers = () => {
           </Container>
         ))}
         <Container>
-          <ContentImage src={Profile} />
+          <CustomerProfile>
+            <ContentImage src={Profile} />
+          </CustomerProfile>
           <Content>
             <div className="above_section">
               <p className="detail">40代前半・男性</p>
@@ -114,7 +159,7 @@ const Customers = () => {
                 膝に大きな怪我（半月板水平断裂）を負い、当時はまともに歩ける状態ではありませんでした。病院でも運動復帰できるまでは6ヶ月ほどかかると言われていたのですが、中村さんにサポートしていただいたことで、たった3ヶ月で運動復帰することができました。
               </p>
               <p className="text">
-                はじめは、関節の可動域を広げるところから始まり、3ヶ月で日常生活レベルの負荷に合わせた筋力トレーニングまでできるようになり、とても救われました。
+                はじめは、関節の可動域を広げるところから始まり、3ヶ月で日常生活レベルの負荷に合わせた筋力トレーニングまでできるようになり、早く日常生活に戻れただけではなく、運動もできるようになったのでとても救われました。
               </p>
             </div>
           </Content>
@@ -136,19 +181,13 @@ const VoiceSection = styled.div`
 const Container = styled.div`
   padding: 50px 20px;
   background-color: white;
-
-  /* clip-path: polygon(0 18%, 100% 0%, 100% 82%, 0% 100%); */
   transform: skew(0deg, -10deg);
   border-radius: 31px;
   position: relative;
 `;
 
 const ContentImage = styled.img`
-  position: absolute;
-  top: -90px;
-  left: 20px;
-  z-index: 999;
-  transform: skew(0deg, 10deg);
+  width: 100%;
 `;
 
 const Content = styled.div`
@@ -277,6 +316,27 @@ const Content = styled.div`
           }
         }
       }
+      .result_content {
+        width: 95%;
+        margin: 0 auto;
+        .succeed {
+          font-size: 12px;
+          color: white;
+          border-radius: 30px;
+          width: max-content;
+          padding: 5px 20px;
+          background-color: var(--enji);
+        }
+        .list {
+          margin-left: 10px;
+          padding: 10px 10px 5px 10px;
+          .item {
+            list-style: none;
+            font-size: 10px;
+            line-height: 23px;
+          }
+        }
+      }
     }
   }
   .below_section {
@@ -288,4 +348,18 @@ const Content = styled.div`
       line-height: 21px;
     }
   }
+`;
+
+const CustomerProfile = styled.div`
+  width: 120px;
+  height: 120px;
+  padding: 20px;
+  position: absolute;
+  background-color: #fff0f0;
+  top: -70px;
+  left: 20px;
+  z-index: 999;
+  transform: skew(0deg, 10deg);
+  border-radius: 50%;
+  border: 2px solid var(--enji);
 `;
