@@ -124,7 +124,9 @@ const Contact = () => {
             <p className="address">
               大阪府門真市向島町3-35 <br /> ショッピングモールBearsイースト館１F
             </p>
-            <MapBtn type="button">地図を見る</MapBtn>
+            <MapBtn type="button">
+              <a href="https://goo.gl/maps/Nnxw8t7vcXVvtdEx5">地図を見る</a>
+            </MapBtn>
           </PlaceSection>
         </Size>
       </Size2>
@@ -381,6 +383,11 @@ const MapBtn = styled.button`
   box-shadow: 3px 4px 16px -6px rgba(0, 0, 0, 0.6);
   transition: all 0.4s ease-in-out;
   transition-duration: 0.3s;
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
 
   &:hover {
     box-shadow: 7px 8px 25px -6px rgba(0, 0, 0, 0.5);

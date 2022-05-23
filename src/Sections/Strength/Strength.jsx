@@ -137,12 +137,12 @@ const CardSection = styled(motion.div)`
 `;
 
 const CardElement = styled(motion.div)`
+  background-color: aliceblue;
   width: 341px;
   padding: 30px 20px;
   background-image: url(${(props) => props.background});
   background-position: center;
-  /* border-radius: 20px; */
-
+  background-size: cover;
   overflow: hidden;
   display: flex;
   flex-direction: column;

@@ -26,7 +26,7 @@ const Intro = () => {
           </div>
           <img src={Line} alt="" className="line" />
           <div className="text">
-            <p className="content_text">
+            {/* <p className="content_text">
               「最近運動を始めた」という初心者の方 <br />
               「これからもっと大きくなりたい」というトレーニーの方　
               <br />
@@ -35,7 +35,7 @@ const Intro = () => {
             <p className="content_text">
               しかし、どんな目標達成にも対応できる <br />
               知識・スキル・サポート力を備えています。
-            </p>
+            </p> */}
           </div>
         </div>
         <div className="image_container">
@@ -91,7 +91,8 @@ export default Intro;
 
 const IntroSection = styled.div`
   width: 100%;
-  height: 1414px;
+  height: 100%;
+  padding-bottom: 100px;
   color: white;
   background-image: url(${IntroBg});
   .main_container {
