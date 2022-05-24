@@ -8,14 +8,14 @@ import { ImArrowUpRight } from "react-icons/im";
 const voices = [
   {
     image: Profile,
-    detail: "20代前半・男性",
+    detail: "30代前半・男性",
     name: "たくみ",
     main: "3日坊主の僕が楽しく続けられた!",
-    text: "まだトレーニングを始めたばかりの僕にも難しい専門用語を使わず、納得できるようわかりやすく指導してくれます。",
+    text: "25歳頃から運動をする機会が減り体重が増えそれに伴い見た目もだらしなくなりました。このままでは駄目だと思い、知識と経験のあるトレーナーについてもらいトレーニングを始めました。",
     text_2:
-      "正直、初めは続けられるかすごく不安でした。でも、短期的な僕の変化を想定しながら、日々自分が変化していることに気付ける環境を作りをしてくださっているので、とても楽しく続けられています。",
-    weight_before: "82",
-    weight_after: "63",
+      "自分に合ったトレーニング方法を丁寧に教えてくださり、楽しくできました。扱える重量も増え、成長している実感が湧きとても嬉しいです。",
+    weight_before: "80",
+    weight_after: "62",
   },
   {
     image: Profile,
@@ -42,7 +42,7 @@ const Customers = () => {
             <div className="above_section">
               <p className="detail">60代・女性</p>
               <p className="name">
-                なな<span>さん（仮）</span>
+                かなこ<span>さん（仮）</span>
               </p>
             </div>
             <div className="main_text">
@@ -126,7 +126,7 @@ const Customers = () => {
             <div className="above_section">
               <p className="detail">40代前半・男性</p>
               <p className="name">
-                なな<span>さん（仮）</span>
+                たかし<span>さん（仮）</span>
               </p>
             </div>
             <div className="main_text">
