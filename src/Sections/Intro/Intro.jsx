@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Size } from "../../Components/Components";
-
+import { useState } from "react";
 //import Images
 
 import IntroBg from "../../Images/intro_bg.svg";
