@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/personal_gym_2/static/css/main.ea75e42e.css",
+    "main.js": "/personal_gym_2/static/js/main.1b3f29e0.js",
+    "static/media/customer-bg.svg": "/personal_gym_2/static/media/customer-bg.8dd5537938ca0b845524a0048ea8d054.svg",
+    "static/media/hero-bg.svg": "/personal_gym_2/static/media/hero-bg.4b097ecb93437cf7cb6f34835ed55407.svg",
+    "static/media/fitness-girl 1.svg": "/personal_gym_2/static/media/fitness-girl 1.02102a385a94704fe53f0a418ad5d9c0.svg",
+    "static/media/intro_bg.svg": "/personal_gym_2/static/media/intro_bg.9fadd19bb0689103f5560b6c4fe8f45f.svg",
+    "static/media/fitness-man.svg": "/personal_gym_2/static/media/fitness-man.bed756f8ece2920fee7ef3d705297f39.svg",
+    "static/media/feature-2.png": "/personal_gym_2/static/media/feature-2.bfe0a65bc0f18d80877a.png",
+    "static/media/seijusan.png": "/personal_gym_2/static/media/seijusan.8d5024f87c73ea0a7575.png",
+    "static/media/feature-1.png": "/personal_gym_2/static/media/feature-1.e205d91747bb520b565b.png",
+    "static/media/feature-3.png": "/personal_gym_2/static/media/feature-3.6031735ed751d64505a7.png",
+    "static/media/contact-left-red.png": "/personal_gym_2/static/media/contact-left-red.29860cf36d660374e64a.png",
+    "static/media/hero-2.svg": "/personal_gym_2/static/media/hero-2.13f5a6f51f6b47bd663727d955379768.svg",
+    "static/media/customer-1.svg": "/personal_gym_2/static/media/customer-1.3883187c29e549b9770f00a6c808ee68.svg",
+    "static/media/hero-1.svg": "/personal_gym_2/static/media/hero-1.582d8415a725e825a6ad94856933de89.svg",
+    "static/media/customer-2.svg": "/personal_gym_2/static/media/customer-2.4be13ccb64b9429f52e947aa725ab260.svg",
+    "static/media/title-circles.svg": "/personal_gym_2/static/media/title-circles.6c6da3fab3f99b4019ef7c87488b934a.svg",
+    "index.html": "/personal_gym_2/index.html",
+    "static/media/intro_line.svg": "/personal_gym_2/static/media/intro_line.f0f7c01942f7cd5b1506285ac21ecb74.svg",
+    "main.ea75e42e.css.map": "/personal_gym_2/static/css/main.ea75e42e.css.map",
+    "main.1b3f29e0.js.map": "/personal_gym_2/static/js/main.1b3f29e0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ea75e42e.css",
+    "static/js/main.1b3f29e0.js"
+  ]
+}
