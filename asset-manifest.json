@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/personal_gym_2/static/css/main.ea75e42e.css",
-    "main.js": "/personal_gym_2/static/js/main.ab089ac1.js",
+    "main.js": "/personal_gym_2/static/js/main.309d3bed.js",
     "static/media/customer-bg.svg": "/personal_gym_2/static/media/customer-bg.8dd5537938ca0b845524a0048ea8d054.svg",
     "static/media/hero-bg.svg": "/personal_gym_2/static/media/hero-bg.4b097ecb93437cf7cb6f34835ed55407.svg",
     "static/media/fitness-girl 1.svg": "/personal_gym_2/static/media/fitness-girl 1.02102a385a94704fe53f0a418ad5d9c0.svg",
@@ -20,10 +20,10 @@
     "index.html": "/personal_gym_2/index.html",
     "static/media/intro_line.svg": "/personal_gym_2/static/media/intro_line.f0f7c01942f7cd5b1506285ac21ecb74.svg",
     "main.ea75e42e.css.map": "/personal_gym_2/static/css/main.ea75e42e.css.map",
-    "main.ab089ac1.js.map": "/personal_gym_2/static/js/main.ab089ac1.js.map"
+    "main.309d3bed.js.map": "/personal_gym_2/static/js/main.309d3bed.js.map"
   },
   "entrypoints": [
     "static/css/main.ea75e42e.css",
-    "static/js/main.ab089ac1.js"
+    "static/js/main.309d3bed.js"
   ]
 }
