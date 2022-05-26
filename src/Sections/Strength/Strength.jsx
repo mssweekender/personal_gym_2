@@ -249,7 +249,7 @@ const ContentText = styled(motion.div)`
     width: 100%;
     font-size: 18px;
     font-weight: 500;
-    word-break: keep-all;
+    /* word-break: keep-all; */
   }
   .sub_text {
     width: 100%;
