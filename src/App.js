@@ -28,7 +28,8 @@ function App() {
 export default App;
 
 const MainContainer = styled.div`
-  width: 390px;
+  width: 100%;
+  max-width: 390px;
   margin: 0 auto;
   position: relative;
   overflow: hidden;

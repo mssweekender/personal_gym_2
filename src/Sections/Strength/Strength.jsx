@@ -246,11 +246,13 @@ const ContentText = styled(motion.div)`
   color: white;
   z-index: 999;
   .text {
+    width: 100%;
     font-size: 18px;
     font-weight: 500;
     word-break: keep-all;
   }
   .sub_text {
+    width: 100%;
     font-size: 12px;
     font-weight: 300;
   }
